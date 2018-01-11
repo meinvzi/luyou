@@ -1,0 +1,34 @@
+<div class="box">
+    <header>
+        <a href="#">返回</a>
+        <a href="#">微票事</a>
+        <a href="#">详情</a>
+    </header>
+    <section>
+        <div class="banner">
+            <img src="Content/images/2_02.gif" alt="">
+        </div>
+        <div class="main">
+                <dl ng-repeat="(i, use) in user">
+                 <div ng-click="linkTo(i)">
+                    <dt>
+                        <img ng-src={{use.img}} alt="">
+                    </dt>
+                    <dd>
+                        <h3>{{use.title}}</h3>
+                        <p>{{use.content}}</p>
+                        <p>{{use.text}}</p>
+                        <span>{{use.price}}</span>
+                    </dd>
+                   </div>
+                </dl>  
+        </div>
+    </section>
+    <footer>
+        <a href="#">本地</a> 
+        <a href="#">我的</a>
+        <a href="#">赛事</a>
+        <a href="#">军事</a>
+        <a href="#">娱乐</a>
+    </footer>
+</div>
